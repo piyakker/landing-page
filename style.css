@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 /* reset css */
-html,
+/* html,
 body,
 div,
 span,
@@ -90,10 +90,10 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
+} */
 
 /* HTML5 display-role reset for older browsers */
-article,
+/* article,
 aside,
 details,
 figcaption,
@@ -132,4 +132,200 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+} */
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Muli',
+    sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.hero-section {
+  background-color: #1f2937;
+  color: #eaebecb4;
+  font-size: 1.8rem;
+}
+
+div.hero {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+}
+
+.logo,
+.link {
+  margin-top: 15px;
+}
+
+.link {
+  margin-left: 15px;
+}
+
+.logo,
+.hero-title,
+.button {
+  color: #f9faf8;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 4.8rem;
+}
+
+.hero-item {
+  display: flex;
+  padding: 120px 0;
+}
+
+.hero-text {
+  width: 45%;
+  margin-right: 80px;
+}
+
+.hero-text p {
+  margin: 10px 0 10px
+}
+
+.button {
+  width: 80px;
+  height: 20px;
+  background-color: #3882F6;
+  padding: 6px 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.8rem;
+}
+
+img {
+  width: 55%;
+}
+
+.subtext-section {
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+h3.subtext-title {
+  margin: 30px;
+  color: #1f2937;
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+
+div.subtext {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: black;
+}
+
+div.image {
+  width: 100%;
+  height: 0;
+  border: 4px solid #3882F6;
+  border-radius: 20px;
+  margin: 0 auto;
+  /* 可以自動調整長寬相等的方法，height設為0，padding-bottom為width的100% */
+  padding-bottom: 100%;
+}
+
+.subtext-image {
+  text-align: center;
+  width: 160px;
+  ;
+  margin: 0 30px 0;
+}
+
+.subtext-text {
+  margin: 10px 0 0;
+}
+
+section.quotation {
+  background-color: #e5e7eb;
+  padding: 100px 250px 50px 300px;
+  font-size: 3.6rem;
+}
+
+p.quote-text {
+  color: #1F2937;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+p.person {
+  margin-top: 0;
+  margin-right: 40px;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.action {
+  padding: 100px 180px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 120px;
+  background-color: #3882F6;
+  border-radius: 10px;
+}
+
+.box-text {
+  color: white;
+  font-size: 2.4rem;
+}
+
+.box-text h4 {
+  margin: 5px 0;
+}
+
+.box-text p {
+  margin: 0;
+  color: #e5e7eb;
+  font-size: 1.8rem;
+}
+
+p.white-border {
+  outline: 3px solid white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #1F2937;
+  color: #e5e7eb;
+  font-size: 1.8rem;
+}
+
+.fa-copyright {
+  margin: 0 10px;
+  font-size: 1.4rem;
+  font-weight: 100;
 }
